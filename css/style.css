@@ -1,10 +1,3 @@
-/*
-Theme: Flatfy Theme
-Author: Andrea Galanti
-Bootstrap Version 
-Build: 1.0
-http://www.andreagalanti.it
-*/
 
 @font-face {
   font-family: 'Lato';
@@ -208,14 +201,23 @@ you can use the generic selector below, but it's slower:
   border-top-color: #34495e !important;
 }
 body {
-	height: 100%;
-	width: 100%;
+
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.72222;
   color: #34495e;
   background-color: #ffffff;
+    overflow-x: hidden !important;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
+
+::selection {
+  background: #81BCDA;
+}
+
 a {
   color: #34495e;
   text-decoration: none;
@@ -263,7 +265,6 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
   font-weight: 700;
   line-height: 1.1;
   color: inherit;
@@ -318,19 +319,18 @@ p {
   line-height: 1.72222;
   margin: 0 0 15px;
 }
-li{list-style-type:none}
+.custom-li{list-style-type:none}
 .white {color:white}
 .hidden { visibility: hidden;}
 .lead {
   margin-bottom: 30px;
   margin-top: 20px;
   font-size: 20px;
-  line-height: 1.46428571;
-  font-weight: 300;
+  font-weight: 600;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 @media (min-width: 768px) {
   .lead {
-	
   }
 }
 small,
@@ -612,23 +612,23 @@ fieldset[disabled] .btn-default.active {
   border-color: #bdc3c7;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #1abc9c;
+  color: #222;
+  background-color: #ffbb91;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #48c9b0;
-  border-color: #48c9b0;
+  color: #222;
+  background-color: #ffbb91;
+  border-color: #ffbb91;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  background: #16a085;
-  border-color: #16a085;
+  background: #ffbb91;
+  border-color: #ffbb91;
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -645,27 +645,28 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #ffbb91;
+  border-color: #ffbb91;
 }
 .btn-info {
-  color: #ffffff;
-  background-color: #3498db;
+  color: #222;
+  background-color: #FF9A77;
+  border: none;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #5dade2;
-  border-color: #5dade2;
+  color: #222;
+  background-color: #FF9A77;
+  border-color: ##FF9A77;
 }
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  background: #2c81ba;
-  border-color: #2c81ba;
+  background: #FF9A77;
+  border-color: #FF9A77;
 }
 .btn-info.disabled,
 .btn-info[disabled],
@@ -682,8 +683,8 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #3498db;
-  border-color: #3498db;
+  background-color: #FF9A77;
+  border-color: #FF9A77;
 }
 .btn-danger {
   color: #ffffff;
@@ -725,6 +726,7 @@ fieldset[disabled] .btn-danger.active {
 .btn-success {
   color: #ffffff;
   background-color: #2ecc71;
+  border: none;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -1138,9 +1140,8 @@ input[type="search"] {
   -webkit-appearance: none !important;
 }
 label {
-  font-weight: normal;
   font-size: 15px;
-  line-height: 2.4;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .form-control:-moz-placeholder {
   color: #b2bcc5;
@@ -1175,7 +1176,7 @@ label {
 }
 .form-group.focus .form-control,
 .form-control:focus {
-  border-color: #1abc9c;
+  border-color:  #a88dea;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1947,9 +1948,15 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   border-width: 0;
 }
 .navbar-brand {
+
+}
+
+a.navbar-brand {
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 24px;
-  line-height: 1.042;
-  font-weight: 700;
+  letter-spacing: -.3px;
+  font-weight: 600 !important;
+  margin-left: 5px !important;
 }
 .navbar-brand > [class*="fui-"] {
   font-size: 19px;
@@ -2002,7 +2009,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
 }
 .navbar-nav > li > a {
   font-size: 16px;
-  line-height: 23px;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 .navbar-nav .dropdown-toggle .caret {
@@ -2276,17 +2283,19 @@ select[multiple].navbar-form .btn {
   border-width: 2px;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #34495e;
+  color: #222;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #1abc9c;
+  color: #81bcda;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #1abc9c;
+  color: #81bcda;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -4451,66 +4460,19 @@ body.vjs-full-window {
     background-image: url(../images/login/imac-2x.png);
   }
 }
+
 footer {
-  background-color: #edeff1;
-  color: #bac1c8;
-  font-size: 15px;
-  padding: 0;
+  background: #3c3c3c !important;
+  padding: 35px;
+  margin-top: 20%;
 }
-footer a {
-  color: #9aa4af;
-  font-weight: 700;
+footer i {
+  color: white;
 }
-footer p {
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 10px;
+footer i:hover {
+  color:rgb(255, 148, 203);
 }
-.footer-title {
-  margin: 0 0 22px;
-  padding-top: 21px;
-  font-size: 24px;
-  line-height: 40px;
-}
-.footer-brand {
-  display: block;
-  margin-bottom: 26px;
-  width: 220px;
-}
-.footer-brand img {
-  width: 216px;
-}
-.footer-banner {
-  background-color: #34495e;
-  color: #fff;
-  margin-left: 42px;
-  min-height: 316px;
-  padding: 0 30px 30px;
-}
-.footer-banner .footer-title {
-  color: #ffffff;
-}
-.footer-banner a {
-  color: #fff;
-  text-decoration: underline;
-}
-.footer-banner a:hover {
-  text-decoration: none;
-}
-.footer-banner ul {
-  list-style-type: none;
-  margin: 0 0 26px;
-  padding: 0;
-}
-.footer-banner ul li {
-  border-top: 0px solid #1bc5a3;
-  line-height: 19px;
-  padding: 6px 0;
-}
-.footer-banner ul li:first-child {
-  border-top: none;
-  padding-top: 1px;
-}
+
 .last-col {
   overflow: hidden;
 }
@@ -4715,14 +4677,41 @@ footer p {
   margin-left: 20px;
 }
 
+
+
+body.index section#about div.inner p {
+  text-align: left;
+  color: #ffff;
+}
+
+body.index section#about div.inner a {
+  color: #3498db;
+}
+
+body.index section#about div.inner a.link {
+  width: 150px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  body.index section#about {
+    height: auto;
+  }
+  
+  body.index section#about div.inner  {
+    height: 720px;
+  }
+}
 /* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
 		p{text-align: center;}
-		
+
 		h1, .h1 {
 			font-size: 50px;
 		}
-		
+
 		h3, .h3 {
 			font-size: 20px;
 			text-align:center
@@ -4749,27 +4738,27 @@ footer p {
 	}
 
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		
-		
+
+
 		h1, .h1 {
 			font-size: 50px;
 		}
-		
+
 		h3, .h3 {
 			font-size: 20px;
-			
+
 		}
 		.col-sm-4 {margin-bottom: 120px; text-align:center;}
-		
+
 		.col-sm-5 {margin-top:120px}
 		.box-ct{text-align:center}
-		
+
 		.box-icon{margin: 0 auto;}
 		address{margin-top:80px;}
 		.address{text-align:center}
 		.footer-banner{display:none}
-		
-		
-		
-		
+
+
+
+
 	}
