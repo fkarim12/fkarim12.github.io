@@ -1,7 +1,21 @@
-#Flatfy - Theme | New Version!
+# t31k.dev
+🎓  My Portfolio site
 
-##Responsive Mobile & Flat Design 
-Own Carousel & Bootstrap Framework CSS 
-Font Icon Svg & Animate
+👋🏻  Hi there, welcome to my portfolio site, this page was Boostrapped using [Flatfy Theme](https://github.com/andreagalanti/Flatfy-Free-Flat-and-Responsive-HTML5-Template).
+The skeleton was built using this theme but I've gone lengths to customize it to my personal preference.
 
-Theme made by [Andrea Galanti](http://www.andreagalanti.it/flatfy.php)
+🙏🏻   If you came from my Medium post, thank you for your contribution.
+
+## 📚 Libraries Used
+- [x] Bootstrap
+- [x] jQuery
+- [x] Font Awesome
+- [x] DateFNS
+- [x] Modernizr
+- [x] SlickJS
+- [x] LozadJS
+- [x] Medium's RSS API
+- [x] WowJS
+
+🔗  [Visit Live Site](https://t31k.dev)
+
