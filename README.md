@@ -1,10 +1,8 @@
-# t31k.dev
-🎓  My Portfolio site
+# fkarim12.github.io
+Portfolio Site
 
-👋🏻  Hi there, welcome to my portfolio site, this page was Boostrapped using [Flatfy Theme](https://github.com/andreagalanti/Flatfy-Free-Flat-and-Responsive-HTML5-Template).
+Hi there, welcome to my portfolio site, this page was Boostrapped using [Flatfy Theme](https://github.com/andreagalanti/Flatfy-Free-Flat-and-Responsive-HTML5-Template).
 The skeleton was built using this theme but I've gone lengths to customize it to my personal preference.
-
-🙏🏻   If you came from my Medium post, thank you for your contribution.
 
 ## 📚 Libraries Used
 - [x] Bootstrap
@@ -17,5 +15,5 @@ The skeleton was built using this theme but I've gone lengths to customize it to
 - [x] Medium's RSS API
 - [x] WowJS
 
-🔗  [Visit Live Site](https://t31k.dev)
+🔗  [Visit Live Site](https://fkarim12.github.io)
 
